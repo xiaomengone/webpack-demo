@@ -20,6 +20,14 @@ devServer: {
  module: {
   rules: [
     {
+      test: /\.styl$/,
+      use: [
+        "style-loader",
+        "css-loader",
+        "stylus-loader"  
+      ]
+    },
+    {
       test: /\.s[ac]ss$/i,
       use: [
         "style-loader",
